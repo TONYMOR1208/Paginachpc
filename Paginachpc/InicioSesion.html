@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="InicioSesion.css">
+    <script src="InicioSesion.js" defer></script> <!-- Cargar el script al final del documento -->
+</head>
+<body>
+
+   <!-- Header -->
+   <header>
+        <div class="logo">
+            <a href="Principal.html">
+                <img src="images/images.png" alt="Logo PC Tecnología"> 
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contáctenos</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
+                <li><a href="Registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Formulario de Inicio de Sesión -->
+    <div class="login-container">
+        <h2>Iniciar Sesión Con Su Cuenta</h2>
+        <p><a href="Principal.html">Inicio</a> / Iniciar sesión con su cuenta</p>
+        
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="email">Dirección de correo electrónico *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Contraseña *</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <span class="toggle-password" onclick="togglePassword()" style="cursor: pointer;">👁️</span>
+                </div>
+            </div>
+            
+            <button type="submit" class="login-button">Iniciar Sesión</button>
+            
+            <p><a href="RecuperacionContraeña.html">¿Olvidó su contraseña?</a></p>
+            <p>¿NO TIENE UNA CUENTA? <a href="Registro.html">CREA UNA AQUÍ</a></p>
+        </form>
+    </div>
+
+</body>
+</html>

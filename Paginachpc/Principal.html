@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal de Ventas</title>
+    <link rel="stylesheet" href="Principal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="Principal.html">
+                <img src="images/images.png" alt="Logo de la Empresa">
+            </a>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contáctenos</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li id="login"><a href="InicioSesion.html">Iniciar Sesión</a></li>
+                <li id="register"><a href="Registro.html">Registrarse</a></li>
+                <li id="cart" style="display: none;"><a href="cart.html">Carrito</a></li>
+                <li id="logout" style="display: none;"><a href="logout.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Productos -->
+    <main>
+        <div class="product-grid">
+            <div class="product" data-product-id="1">
+                <img src="product1.jpg" alt="Producto 1">
+                <p>Producto 1</p>
+                <span class="price">$100</span>
+            </div>
+            <div class="product" data-product-id="2">
+                <img src="product2.jpg" alt="Producto 2">
+                <p>Producto 2</p>
+                <span class="price">$150</span>
+            </div>
+            <div class="product" data-product-id="3">
+                <img src="product3.jpg" alt="Producto 3">
+                <p>Producto 3</p>
+                <span class="price">$200</span>
+            </div>
+            <div class="product" data-product-id="4">
+                <img src="product4.jpg" alt="Producto 4">
+                <p>Producto 4</p>
+                <span class="price">$250</span>
+            </div>
+            <div class="product" data-product-id="5">
+                <img src="product5.jpg" alt="Producto 5">
+                <p>Producto 5</p>
+                <span class="price">$300</span>
+            </div>
+            <div class="product" data-product-id="6">
+                <img src="product6.jpg" alt="Producto 6">
+                <p>Producto 6</p>
+                <span class="price">$350</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="Principal.js"></script>
+</body>
+</html>

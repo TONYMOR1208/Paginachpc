@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="RecuperacionContraeña.css">
+</head>
+<body>
+
+   <!-- Header -->
+   <header>
+    <div class="logo">
+        <a href="InicioSesion.html">
+       <img src="images/images.png" alt="Logo PC Tecnología" > 
+    </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contáctenos</a></li>
+            <li><a href="#">Marcas</a></li>
+            <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
+            <li><a href="Registro.html">Registrarse</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Formulario de Recuperación de Contraseña -->
+    <div class="recover-container">
+        <h2>Recuperar Contraseña</h2>
+        <p><a href="#">Inicio</a> / Recuperar Contraseña</p>
+        
+        <form id="recoverForm" onsubmit="return validateRecoverForm()">
+            <div class="input-group">
+                <label for="recover-email">Dirección de correo electrónico *</label>
+                <input type="email" id="recover-email" name="recover-email" required>
+            </div>
+            
+            <button type="submit" class="recover-button">Enviar Enlace de Recuperación</button>
+            
+            <p>¿YA TIENE UNA CUENTA? <a href="InicioSesion.html">INICIE SESIÓN AQUÍ</a></p>
+        </form>
+    </div>
+
+    <script src="RecuperacionContraeña.js"></script>
+</body>
+</html>
